@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listBoxFood = new System.Windows.Forms.ListBox();
+            this.listBoxHave = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBoxDrinks = new System.Windows.Forms.ListBox();
+            this.listBoxNeed = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,13 +49,13 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // listBoxFood
+            // listBoxHave
             // 
-            this.listBoxFood.FormattingEnabled = true;
-            this.listBoxFood.Location = new System.Drawing.Point(81, 260);
-            this.listBoxFood.Name = "listBoxFood";
-            this.listBoxFood.Size = new System.Drawing.Size(198, 121);
-            this.listBoxFood.TabIndex = 21;
+            this.listBoxHave.FormattingEnabled = true;
+            this.listBoxHave.Location = new System.Drawing.Point(81, 260);
+            this.listBoxHave.Name = "listBoxHave";
+            this.listBoxHave.Size = new System.Drawing.Size(198, 121);
+            this.listBoxHave.TabIndex = 21;
             // 
             // button1
             // 
@@ -66,13 +66,13 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // listBoxDrinks
+            // listBoxNeed
             // 
-            this.listBoxDrinks.FormattingEnabled = true;
-            this.listBoxDrinks.Location = new System.Drawing.Point(81, 447);
-            this.listBoxDrinks.Name = "listBoxDrinks";
-            this.listBoxDrinks.Size = new System.Drawing.Size(198, 121);
-            this.listBoxDrinks.TabIndex = 24;
+            this.listBoxNeed.FormattingEnabled = true;
+            this.listBoxNeed.Location = new System.Drawing.Point(81, 447);
+            this.listBoxNeed.Name = "listBoxNeed";
+            this.listBoxNeed.Size = new System.Drawing.Size(198, 121);
+            this.listBoxNeed.TabIndex = 24;
             // 
             // button3
             // 
@@ -88,18 +88,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(159, 244);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 27;
-            this.label1.Text = "Food";
+            this.label1.Text = "Have";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(159, 431);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 28;
-            this.label2.Text = "Drinks";
+            this.label2.Text = "Need";
             // 
             // Form1
             // 
@@ -109,9 +109,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.listBoxDrinks);
+            this.Controls.Add(this.listBoxNeed);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBoxFood);
+            this.Controls.Add(this.listBoxHave);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -124,9 +124,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListBox listBoxFood;
+        private System.Windows.Forms.ListBox listBoxHave;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBoxDrinks;
+        private System.Windows.Forms.ListBox listBoxNeed;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
