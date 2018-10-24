@@ -12,9 +12,18 @@ namespace CasimirJustin_Assignment1
 {
     public partial class UserInput : Form
     {
+        public event EventHandler UpdateList;
+
+
         public UserInput()
         {
             InitializeComponent();
+        }
+
+        private void buttonHAVE_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
