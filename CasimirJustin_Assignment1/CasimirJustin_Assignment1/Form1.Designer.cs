@@ -28,13 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listBoxFood = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBoxDrinks = new System.Windows.Forms.ListBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(361, 787);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // listBoxFood
+            // 
+            this.listBoxFood.FormattingEnabled = true;
+            this.listBoxFood.Location = new System.Drawing.Point(81, 260);
+            this.listBoxFood.Name = "listBoxFood";
+            this.listBoxFood.Size = new System.Drawing.Size(198, 121);
+            this.listBoxFood.TabIndex = 21;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(139, 610);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // listBoxDrinks
+            // 
+            this.listBoxDrinks.FormattingEnabled = true;
+            this.listBoxDrinks.Location = new System.Drawing.Point(81, 447);
+            this.listBoxDrinks.Name = "listBoxDrinks";
+            this.listBoxDrinks.Size = new System.Drawing.Size(198, 121);
+            this.listBoxDrinks.TabIndex = 24;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(139, 150);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 32);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "User input";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(159, 244);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Food";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(159, 431);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Drinks";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(360, 784);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.listBoxDrinks);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBoxFood);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox listBoxFood;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBoxDrinks;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
