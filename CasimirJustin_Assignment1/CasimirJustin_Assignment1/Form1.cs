@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace CasimirJustin_Assignment1
 {
@@ -69,7 +71,7 @@ namespace CasimirJustin_Assignment1
         {
 
         }
-
+        // Changes list
         private void buttonHaveToNeed_Click(object sender, EventArgs e)
         {
             if (listBoxHave.SelectedItem != null)
@@ -83,6 +85,7 @@ namespace CasimirJustin_Assignment1
             }
         }
 
+        //Changes List
         private void buttonNeedToHave_Click(object sender, EventArgs e)
         {
             if (listBoxNeed.SelectedItem != null)
@@ -95,7 +98,46 @@ namespace CasimirJustin_Assignment1
                 MessageBox.Show("Please select an item from the HAVE list.");
             }
         }
+
+        //Saves both list and labels them
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                using (Stream s = File.Open(saveFileDialog1.FileName, FileMode.CreateNew))
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+
+
+                    sw.WriteLine("HAVE:");
+
+                    foreach (var item in listBoxHave.Items)
+                    {
+                        sw.WriteLine(item);
+                    }
+                    sw.WriteLine("");
+                    sw.WriteLine("NEED:");
+
+                    foreach (var item in listBoxNeed.Items)
+                    {
+                        sw.WriteLine(item);
+                    }
+
+
+
+
+                   
+                    
+
+
+                }
+            }
+        }
     }
-
-
 }
+
+

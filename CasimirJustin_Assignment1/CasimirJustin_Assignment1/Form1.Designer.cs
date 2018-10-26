@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonNeedToHave = new System.Windows.Forms.Button();
             this.buttonHaveToNeed = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,11 +126,22 @@
             this.buttonHaveToNeed.UseVisualStyleBackColor = true;
             this.buttonHaveToNeed.Click += new System.EventHandler(this.buttonHaveToNeed_Click);
             // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(143, 579);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 58);
+            this.buttonSave.TabIndex = 31;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 784);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonNeedToHave);
             this.Controls.Add(this.buttonHaveToNeed);
             this.Controls.Add(this.label2);
@@ -158,6 +170,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonNeedToHave;
         private System.Windows.Forms.Button buttonHaveToNeed;
+        private System.Windows.Forms.Button buttonSave;
     }
 }
 

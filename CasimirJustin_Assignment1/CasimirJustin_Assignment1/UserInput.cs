@@ -22,12 +22,14 @@ namespace CasimirJustin_Assignment1
             InitializeComponent();
         }
 
+        //invokes eventhandler
         private void buttonHAVE_Click(object sender, EventArgs e)
         {
             UpdateHave?.Invoke(this, new EventArgs());
 
         }
 
+        //invokes eventhandler
         private void buttonNEED_Click(object sender, EventArgs e)
         {
             UpdateNeed?.Invoke(this, new EventArgs());
