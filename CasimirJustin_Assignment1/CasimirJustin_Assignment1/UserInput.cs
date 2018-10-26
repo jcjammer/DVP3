@@ -12,7 +12,9 @@ namespace CasimirJustin_Assignment1
 {
     public partial class UserInput : Form
     {
-        public event EventHandler UpdateList;
+        public event EventHandler UpdateHave;
+        public event EventHandler UpdateNeed;
+
 
 
         public UserInput()
@@ -22,7 +24,13 @@ namespace CasimirJustin_Assignment1
 
         private void buttonHAVE_Click(object sender, EventArgs e)
         {
+            UpdateHave?.Invoke(this, new EventArgs());
 
+        }
+
+        private void buttonNEED_Click(object sender, EventArgs e)
+        {
+            UpdateNeed?.Invoke(this, new EventArgs());
 
         }
     }

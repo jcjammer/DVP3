@@ -8,3 +8,4 @@
 \\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment1\CasimirJustin_Assignment1\obj\Debug\CasimirJustin_Assignment1.csproj.CoreCompileInputs.cache
 \\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment1\CasimirJustin_Assignment1\obj\Debug\CasimirJustin_Assignment1.exe
 \\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment1\CasimirJustin_Assignment1\obj\Debug\CasimirJustin_Assignment1.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment1\CasimirJustin_Assignment1\obj\Debug\CasimirJustin_Assignment1.UserInput.resources

@@ -33,6 +33,35 @@ namespace CasimirJustin_Assignment1
             this.Size = new Size(width, height);
         }
 
-     
+        private void buttonInput_Click(object sender, EventArgs e)
+        {
+            UserInput newWindow = new UserInput();
+
+            newWindow.UpdateHave += Update_Have;
+            newWindow.UpdateNeed += Update_Need;
+
+
+            newWindow.Show();
+        }
+
+        private void Update_Have(object sender, EventArgs e)
+        {
+            UserInput copyData = (UserInput)sender;
+
+            listBoxHave.Items.Add(copyData.textBoxItem.Text);
+
+
+        }
+
+        private void Update_Need(object sender, EventArgs e)
+        {
+            UserInput copyData = (UserInput)sender;
+
+            listBoxNeed.Items.Add(copyData.textBoxItem.Text);
+
+        }
+
     }
+
+
 }

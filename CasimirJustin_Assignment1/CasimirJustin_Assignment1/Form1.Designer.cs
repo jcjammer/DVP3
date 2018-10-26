@@ -33,7 +33,7 @@
             this.listBoxHave = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listBoxNeed = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonInput = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,14 +74,15 @@
             this.listBoxNeed.Size = new System.Drawing.Size(198, 121);
             this.listBoxNeed.TabIndex = 24;
             // 
-            // button3
+            // buttonInput
             // 
-            this.button3.Location = new System.Drawing.Point(139, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 32);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "User input";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonInput.Location = new System.Drawing.Point(139, 150);
+            this.buttonInput.Name = "buttonInput";
+            this.buttonInput.Size = new System.Drawing.Size(75, 32);
+            this.buttonInput.TabIndex = 26;
+            this.buttonInput.Text = "User input";
+            this.buttonInput.UseVisualStyleBackColor = true;
+            this.buttonInput.Click += new System.EventHandler(this.buttonInput_Click);
             // 
             // label1
             // 
@@ -108,7 +109,7 @@
             this.ClientSize = new System.Drawing.Size(360, 784);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonInput);
             this.Controls.Add(this.listBoxNeed);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBoxHave);
@@ -127,7 +128,7 @@
         private System.Windows.Forms.ListBox listBoxHave;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBoxNeed;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonInput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }
