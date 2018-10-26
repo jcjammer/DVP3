@@ -33,6 +33,7 @@ namespace CasimirJustin_Assignment1
             this.Size = new Size(width, height);
         }
 
+        //Everything is subscribed here this is where the Forms connect.
         private void buttonInput_Click(object sender, EventArgs e)
         {
             UserInput newWindow = new UserInput();
@@ -44,6 +45,8 @@ namespace CasimirJustin_Assignment1
             newWindow.Show();
         }
 
+        // Updates the have list
+
         private void Update_Have(object sender, EventArgs e)
         {
             UserInput copyData = (UserInput)sender;
@@ -52,7 +55,8 @@ namespace CasimirJustin_Assignment1
 
 
         }
-
+        
+        // Updates the need list
         private void Update_Need(object sender, EventArgs e)
         {
             UserInput copyData = (UserInput)sender;
@@ -61,6 +65,36 @@ namespace CasimirJustin_Assignment1
 
         }
 
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHaveToNeed_Click(object sender, EventArgs e)
+        {
+            if (listBoxHave.SelectedItem != null)
+            {
+                listBoxNeed.Items.Add(listBoxHave.SelectedItem);
+                listBoxHave.Items.Remove(listBoxHave.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("Please select an item from the NEED list.");
+            }
+        }
+
+        private void buttonNeedToHave_Click(object sender, EventArgs e)
+        {
+            if (listBoxNeed.SelectedItem != null)
+            {
+                listBoxHave.Items.Add(listBoxNeed.SelectedItem);
+                listBoxNeed.Items.Remove(listBoxNeed.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("Please select an item from the HAVE list.");
+            }
+        }
     }
 
 
