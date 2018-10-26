@@ -69,7 +69,14 @@ namespace CasimirJustin_Assignment1
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-
+            if (listBoxHave.SelectedItem != null)
+            {
+                listBoxHave.Items.Remove(listBoxHave.SelectedItem);
+            }
+            if (listBoxNeed.SelectedItem != null)
+            {
+                listBoxNeed.Items.Remove(listBoxNeed.SelectedItem);
+            }
         }
         // Changes list
         private void buttonHaveToNeed_Click(object sender, EventArgs e)
