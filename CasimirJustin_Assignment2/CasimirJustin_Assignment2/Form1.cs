@@ -18,6 +18,9 @@ namespace CasimirJustin_Assignment2
 
         DataTable theData = new DataTable();
 
+        int currentRow = 0;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -98,7 +101,27 @@ namespace CasimirJustin_Assignment2
             this.Size = new Size(width, height);
         }
 
-  
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            // changes all the current rows to the first row
+            currentRow = 0;
+            textBoxFirstName.Text = theData.Rows[currentRow]["FirstName"].ToString();
+            textBoxLastName.Text = theData.Rows[currentRow]["LastName"].ToString();
+            numericUpDownPhoneNumber.Value = decimal.Parse(theData.Rows[currentRow]["PhoneNumber"].ToString());
+            textBoxEmail.Text = theData.Rows[currentRow]["Email"].ToString();
+            textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            currentRow = theData.Rows.Count - 1;
+            textBoxFirstName.Text = theData.Rows[currentRow]["FirstName"].ToString();
+            textBoxLastName.Text = theData.Rows[currentRow]["LastName"].ToString();
+            numericUpDownPhoneNumber.Value = decimal.Parse(theData.Rows[currentRow]["PhoneNumber"].ToString());
+            textBoxEmail.Text = theData.Rows[currentRow]["Email"].ToString();
+            textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
+
+        }
     }
 
 }
