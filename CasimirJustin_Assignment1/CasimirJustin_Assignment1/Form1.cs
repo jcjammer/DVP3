@@ -66,7 +66,8 @@ namespace CasimirJustin_Assignment1
             listBoxNeed.Items.Add(copyData.textBoxItem.Text);
 
         }
-
+       
+        // deletes selected items.
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             if (listBoxHave.SelectedItem != null)
