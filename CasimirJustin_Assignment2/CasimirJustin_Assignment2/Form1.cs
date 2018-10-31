@@ -122,6 +122,39 @@ namespace CasimirJustin_Assignment2
             textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
 
         }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            if (currentRow != 0)
+            {
+                currentRow--;
+                textBoxFirstName.Text = theData.Rows[currentRow]["FirstName"].ToString();
+                textBoxLastName.Text = theData.Rows[currentRow]["LastName"].ToString();
+                numericUpDownPhoneNumber.Value = decimal.Parse(theData.Rows[currentRow]["PhoneNumber"].ToString());
+                textBoxEmail.Text = theData.Rows[currentRow]["Email"].ToString();
+                textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
+
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (currentRow < theData.Select().Length - 1)
+            {
+                //update the data
+                currentRow++;
+                textBoxFirstName.Text = theData.Rows[currentRow]["FirstName"].ToString();
+                textBoxLastName.Text = theData.Rows[currentRow]["LastName"].ToString();
+                numericUpDownPhoneNumber.Value = decimal.Parse(theData.Rows[currentRow]["PhoneNumber"].ToString());
+                textBoxEmail.Text = theData.Rows[currentRow]["Email"].ToString();
+                textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
+
+
+            }
+
+
+
+        }
     }
 
 }
