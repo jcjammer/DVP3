@@ -196,10 +196,70 @@ namespace CasimirJustin_Assignment2
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserInput test = new UserInput();
+            test.UpdateContent += Update_Content;
+
+            test.Show();
+        }
+
+        private void Update_Content(object sender, EventArgs e)
+        {
+            UserInput copyData = (UserInput)sender;
+
+            textBoxFirstName.Text = copyData.textBoxFirstName.Text;
+            textBoxLastName.Text = copyData.textBoxLastName.Text;
+            numericUpDownPhoneNumber.Value = copyData.numericUpDownPhoneNumber.Value;
+            textBoxEmail.Text = copyData.textBoxEmail.Text;
+            textBoxRelation.Text = copyData.textBoxRelation.Text;
+            string connectionString = DBUtils.BuildConnectionString();
+
+            //invoke the method to make the connection
+            conn = DBUtils.Connect(connectionString);
+
+            string sql = $"INSERT INTO MyContacts(FirstName, LastName, PhoneNumber, Email, Relation) VALUES('{textBoxFirstName.Text}', '{textBoxLastName.Text}', '{numericUpDownPhoneNumber.Value}', '{textBoxEmail.Text}', '{textBoxRelation.Text}'); ";
+            MySqlCommand mySqlCommand = new MySqlCommand(sql, conn);
+            MySqlDataReader myReader;
+
+
+            myReader = mySqlCommand.ExecuteReader();
+
+
+            conn.Close();
+
+        }
+
+        //This will save the contacts
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                using (Stream s = File.Open(saveFileDialog1.FileName, FileMode.Create))
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+
+
+
+                    sw.WriteLine(textBoxFirstName.Text);
+                    sw.WriteLine(textBoxLastName.Text);
+                    sw.WriteLine(numericUpDownPhoneNumber.Value);
+                    sw.WriteLine(textBoxEmail.Text);
+                    sw.WriteLine(textBoxRelation.Text);
 
 
 
 
 
+
+
+                }
+            }
+
+        }
     }
 }

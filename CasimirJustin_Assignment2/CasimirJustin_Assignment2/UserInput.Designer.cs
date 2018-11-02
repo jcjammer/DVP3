@@ -38,6 +38,7 @@
             this.numericUpDownPhoneNumber = new System.Windows.Forms.NumericUpDown();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPhoneNumber)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,11 +127,22 @@
             this.textBoxFirstName.Size = new System.Drawing.Size(170, 20);
             this.textBoxFirstName.TabIndex = 11;
             // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.Location = new System.Drawing.Point(162, 188);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
+            this.buttonSubmit.TabIndex = 21;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            // 
             // UserInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 233);
+            this.ClientSize = new System.Drawing.Size(367, 233);
+            this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -156,10 +168,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxRelation;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.NumericUpDown numericUpDownPhoneNumber;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.Button buttonSubmit;
+        public System.Windows.Forms.TextBox textBoxRelation;
+        public System.Windows.Forms.TextBox textBoxEmail;
+        public System.Windows.Forms.NumericUpDown numericUpDownPhoneNumber;
+        public System.Windows.Forms.TextBox textBoxLastName;
+        public System.Windows.Forms.TextBox textBoxFirstName;
     }
 }

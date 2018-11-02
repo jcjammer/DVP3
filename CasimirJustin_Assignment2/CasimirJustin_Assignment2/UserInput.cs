@@ -12,9 +12,18 @@ namespace CasimirJustin_Assignment2
 {
     public partial class UserInput : Form
     {
+        public event EventHandler UpdateContent;
+
+
         public UserInput()
         {
             InitializeComponent();
+        }
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            UpdateContent?.Invoke(this, new EventArgs());
+            this.Close();
         }
     }
 }
