@@ -155,6 +155,51 @@ namespace CasimirJustin_Assignment2
 
 
         }
-    }
 
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            string connectionString = DBUtils.BuildConnectionString();
+
+            //invoke the method to make the connection
+            conn = DBUtils.Connect(connectionString);
+
+            string sql = $"DELETE FROM ContactList.MyContacts WHERE ID= '{currentRow + 1}'";
+            MySqlCommand mySqlCommand = new MySqlCommand(sql, conn);
+            MySqlDataReader myReader;
+
+            myReader = mySqlCommand.ExecuteReader();
+
+            
+            conn.Close();
+
+
+
+
+            currentRow++;
+
+            textBoxFirstName.Clear();
+            textBoxLastName.Clear();
+            numericUpDownPhoneNumber.Value = 0;
+            textBoxEmail.Clear();
+            textBoxRelation.Clear();
+
+
+
+            textBoxFirstName.Text = theData.Rows[currentRow]["FirstName"].ToString();
+            textBoxLastName.Text = theData.Rows[currentRow]["LastName"].ToString();
+            numericUpDownPhoneNumber.Value = decimal.Parse(theData.Rows[currentRow]["PhoneNumber"].ToString());
+            textBoxEmail.Text = theData.Rows[currentRow]["Email"].ToString();
+            textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
+
+
+
+
+        }
+
+
+
+
+
+
+    }
 }

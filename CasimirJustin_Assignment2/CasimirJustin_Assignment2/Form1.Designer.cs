@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPhone = new System.Windows.Forms.PictureBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.numericUpDownPhoneNumber = new System.Windows.Forms.NumericUpDown();
@@ -45,19 +45,20 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnFirst = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPhoneNumber)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // pictureBoxPhone
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(425, 787);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxPhone.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPhone.Image")));
+            this.pictureBoxPhone.Location = new System.Drawing.Point(1, 0);
+            this.pictureBoxPhone.Name = "pictureBoxPhone";
+            this.pictureBoxPhone.Size = new System.Drawing.Size(425, 787);
+            this.pictureBoxPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPhone.TabIndex = 0;
+            this.pictureBoxPhone.TabStop = false;
             // 
             // textBoxFirstName
             // 
@@ -195,9 +196,20 @@
             this.btnFirst.UseVisualStyleBackColor = true;
             this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(147, 597);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(69, 42);
+            this.buttonDelete.TabIndex = 16;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(427, 784);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.btnLast);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
@@ -213,9 +225,9 @@
             this.Controls.Add(this.numericUpDownPhoneNumber);
             this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.textBoxFirstName);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxPhone);
             this.Name = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPhoneNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,7 +237,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxPhone;
         private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.NumericUpDown numericUpDownPhoneNumber;
@@ -241,6 +253,7 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }
 

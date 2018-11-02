@@ -13,3 +13,4 @@
 \\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment2\CasimirJustin_Assignment2\obj\Debug\CasimirJustin_Assignment2.csproj.CopyComplete
 \\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment2\CasimirJustin_Assignment2\obj\Debug\CasimirJustin_Assignment2.exe
 \\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment2\CasimirJustin_Assignment2\obj\Debug\CasimirJustin_Assignment2.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment2\CasimirJustin_Assignment2\obj\Debug\CasimirJustin_Assignment2.UserInput.resources
