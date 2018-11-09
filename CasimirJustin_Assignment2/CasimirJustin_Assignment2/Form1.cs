@@ -84,7 +84,7 @@ namespace CasimirJustin_Assignment2
         }
 
 
-
+        //code made by keith to translate
         void HandleClientWindowSize()
         {
             //Modify ONLY these float values
@@ -112,6 +112,7 @@ namespace CasimirJustin_Assignment2
             textBoxRelation.Text = theData.Rows[currentRow]["Relation"].ToString();
         }
 
+        //goes to last
         private void btnLast_Click(object sender, EventArgs e)
         {
             currentRow = theData.Rows.Count - 1;
@@ -123,6 +124,7 @@ namespace CasimirJustin_Assignment2
 
         }
 
+        //goes to previous
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             if (currentRow != 0)
@@ -137,6 +139,7 @@ namespace CasimirJustin_Assignment2
             }
         }
 
+        //goes to next
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (currentRow < theData.Select().Length - 1)
@@ -196,6 +199,7 @@ namespace CasimirJustin_Assignment2
 
         }
 
+        //subscribes and connects userinput
         private void button1_Click(object sender, EventArgs e)
         {
             UserInput test = new UserInput();
@@ -204,6 +208,7 @@ namespace CasimirJustin_Assignment2
             test.Show();
         }
 
+        //Updates the content in the database
         private void Update_Content(object sender, EventArgs e)
         {
             UserInput copyData = (UserInput)sender;

@@ -20,6 +20,7 @@ namespace CasimirJustin_Assignment2
             InitializeComponent();
         }
 
+        //Invokes Method
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
             UpdateContent?.Invoke(this, new EventArgs());
