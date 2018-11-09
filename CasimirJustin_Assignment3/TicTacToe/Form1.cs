@@ -19,7 +19,9 @@ namespace TicTacToe
 
         //tracks if it is x or o
         int counter = 1;
+        //checks if the button has been clicked
         bool newClick = true;
+        //holds space for button
         Button buttonHold = new Button();
 
 
@@ -29,12 +31,12 @@ namespace TicTacToe
         {
             InitializeComponent();
 
-
+            // chooses images
             if (blueToolStripMenuItem.Checked == true)
             {
                 image = blueImages;
             }
-            else
+            if(redToolStripMenuItem.Checked == true)
             {
                 image = redImages;
             }
@@ -62,9 +64,8 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r1c1button_Click;
             newClick = false;
-
+            //verifies board
             VerifyBoard();
 
 
@@ -125,12 +126,12 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r1c2button_Click;
             newClick = false;
 
             VerifyBoard();
         }
 
+        // verifies if the user won
         void VerifyBoard()
         {
             if (r1c1button.ImageIndex == 1 && r2c2button.ImageIndex == 1 && r3c3button.ImageIndex == 1)
@@ -267,7 +268,6 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r1c3button_Click;
             newClick = false;
 
             VerifyBoard();
@@ -293,7 +293,6 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r2c1button_Click;
             newClick = false;
 
             VerifyBoard();
@@ -319,7 +318,6 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r2c2button_Click;
             newClick = false;
 
             VerifyBoard();
@@ -345,7 +343,6 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r2c3button_Click;
             newClick = false;
 
             VerifyBoard();
@@ -371,7 +368,6 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r3c1button_Click;
             newClick = false;
 
             VerifyBoard();
@@ -397,7 +393,6 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r3c2button_Click;
             newClick = false;
 
             VerifyBoard();
@@ -423,12 +418,12 @@ namespace TicTacToe
 
 
             //Disable button so it cannot be changed
-            buttonHold.Click -= r3c3button_Click;
             newClick = false;
 
             VerifyBoard();
         }
 
+        //disables whole board
         void Disable()
         {
             r1c1button.Enabled = false;
@@ -441,18 +436,47 @@ namespace TicTacToe
             r3c2button.Enabled = false;
             r3c3button.Enabled = false;
         }
-
+       
+        // makes a new game.
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             r1c1button.ImageIndex = -1;
             r1c2button.ImageIndex = -1;
-            r1c3button.Enabled = false;
-            r2c1button.Enabled = false;
-            r2c2button.Enabled = false;
-            r2c3button.Enabled = false;
-            r3c1button.Enabled = false;
-            r3c2button.Enabled = false;
-            r3c3button.Enabled = false;
+            r1c3button.ImageIndex = -1;
+            r2c1button.ImageIndex = -1;
+            r2c2button.ImageIndex = -1;
+            r2c3button.ImageIndex = -1;
+            r3c1button.ImageIndex = -1;
+            r3c2button.ImageIndex = -1;
+            r3c3button.ImageIndex = -1;
+
+
+            r1c1button.Enabled = true;
+            r1c2button.Enabled = true;
+            r1c3button.Enabled = true;
+            r2c1button.Enabled = true;
+            r2c2button.Enabled = true;
+            r2c3button.Enabled = true;
+            r3c1button.Enabled = true;
+            r3c2button.Enabled = true;
+            r3c3button.Enabled = true;
+
+            newClick = true;
+
+            if (blueToolStripMenuItem.Checked == true)
+            {
+                image = blueImages;
+            }
+            else
+            {
+                image = redImages;
+            }
+
+        }
+        //closes application
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

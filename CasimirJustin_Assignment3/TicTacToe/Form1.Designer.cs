@@ -59,8 +59,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -72,7 +74,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(259, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(432, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,25 +92,26 @@
             // loadGameToolStripMenuItem
             // 
             this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
-            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadGameToolStripMenuItem.Text = "Load Game";
             // 
             // saveGameToolStripMenuItem
             // 
             this.saveGameToolStripMenuItem.Name = "saveGameToolStripMenuItem";
-            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveGameToolStripMenuItem.Text = "Save Game";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(131, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -176,7 +179,7 @@
             // r1c1button
             // 
             this.r1c1button.ImageList = this.blueImages;
-            this.r1c1button.Location = new System.Drawing.Point(6, 49);
+            this.r1c1button.Location = new System.Drawing.Point(82, 237);
             this.r1c1button.Margin = new System.Windows.Forms.Padding(2);
             this.r1c1button.Name = "r1c1button";
             this.r1c1button.Size = new System.Drawing.Size(75, 78);
@@ -187,7 +190,7 @@
             // r1c2button
             // 
             this.r1c2button.ImageList = this.blueImages;
-            this.r1c2button.Location = new System.Drawing.Point(90, 49);
+            this.r1c2button.Location = new System.Drawing.Point(166, 237);
             this.r1c2button.Margin = new System.Windows.Forms.Padding(2);
             this.r1c2button.Name = "r1c2button";
             this.r1c2button.Size = new System.Drawing.Size(75, 78);
@@ -198,7 +201,7 @@
             // r1c3button
             // 
             this.r1c3button.ImageList = this.blueImages;
-            this.r1c3button.Location = new System.Drawing.Point(172, 49);
+            this.r1c3button.Location = new System.Drawing.Point(248, 237);
             this.r1c3button.Margin = new System.Windows.Forms.Padding(2);
             this.r1c3button.Name = "r1c3button";
             this.r1c3button.Size = new System.Drawing.Size(75, 78);
@@ -209,7 +212,7 @@
             // r2c1button
             // 
             this.r2c1button.ImageList = this.blueImages;
-            this.r2c1button.Location = new System.Drawing.Point(6, 135);
+            this.r2c1button.Location = new System.Drawing.Point(82, 323);
             this.r2c1button.Margin = new System.Windows.Forms.Padding(2);
             this.r2c1button.Name = "r2c1button";
             this.r2c1button.Size = new System.Drawing.Size(75, 78);
@@ -220,7 +223,7 @@
             // r2c2button
             // 
             this.r2c2button.ImageList = this.blueImages;
-            this.r2c2button.Location = new System.Drawing.Point(90, 135);
+            this.r2c2button.Location = new System.Drawing.Point(166, 323);
             this.r2c2button.Margin = new System.Windows.Forms.Padding(2);
             this.r2c2button.Name = "r2c2button";
             this.r2c2button.Size = new System.Drawing.Size(75, 78);
@@ -231,7 +234,7 @@
             // r2c3button
             // 
             this.r2c3button.ImageList = this.blueImages;
-            this.r2c3button.Location = new System.Drawing.Point(172, 135);
+            this.r2c3button.Location = new System.Drawing.Point(248, 323);
             this.r2c3button.Margin = new System.Windows.Forms.Padding(2);
             this.r2c3button.Name = "r2c3button";
             this.r2c3button.Size = new System.Drawing.Size(75, 78);
@@ -242,7 +245,7 @@
             // r3c1button
             // 
             this.r3c1button.ImageList = this.blueImages;
-            this.r3c1button.Location = new System.Drawing.Point(6, 222);
+            this.r3c1button.Location = new System.Drawing.Point(82, 410);
             this.r3c1button.Margin = new System.Windows.Forms.Padding(2);
             this.r3c1button.Name = "r3c1button";
             this.r3c1button.Size = new System.Drawing.Size(75, 78);
@@ -253,7 +256,7 @@
             // r3c2button
             // 
             this.r3c2button.ImageList = this.blueImages;
-            this.r3c2button.Location = new System.Drawing.Point(90, 222);
+            this.r3c2button.Location = new System.Drawing.Point(166, 410);
             this.r3c2button.Margin = new System.Windows.Forms.Padding(2);
             this.r3c2button.Name = "r3c2button";
             this.r3c2button.Size = new System.Drawing.Size(75, 78);
@@ -264,7 +267,7 @@
             // r3c3button
             // 
             this.r3c3button.ImageList = this.blueImages;
-            this.r3c3button.Location = new System.Drawing.Point(172, 222);
+            this.r3c3button.Location = new System.Drawing.Point(248, 410);
             this.r3c3button.Margin = new System.Windows.Forms.Padding(2);
             this.r3c3button.Name = "r3c3button";
             this.r3c3button.Size = new System.Drawing.Size(75, 78);
@@ -280,7 +283,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.Size = new System.Drawing.Size(259, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(432, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -299,7 +302,7 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(84, 46);
+            this.label1.Location = new System.Drawing.Point(160, 234);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(3, 260);
@@ -309,7 +312,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(166, 45);
+            this.label2.Location = new System.Drawing.Point(242, 233);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(3, 260);
@@ -318,7 +321,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(5, 130);
+            this.label3.Location = new System.Drawing.Point(81, 318);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 2);
@@ -328,19 +331,29 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(5, 216);
+            this.label4.Location = new System.Drawing.Point(81, 404);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(245, 2);
             this.label4.TabIndex = 14;
             this.label4.Text = "label4";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(432, 788);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmTicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(259, 311);
+            this.ClientSize = new System.Drawing.Size(432, 784);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -356,6 +369,7 @@
             this.Controls.Add(this.r1c2button);
             this.Controls.Add(this.r1c1button);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTicTacToe";
@@ -364,6 +378,7 @@
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -400,6 +415,7 @@
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
