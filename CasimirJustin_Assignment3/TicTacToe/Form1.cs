@@ -29,6 +29,7 @@ namespace TicTacToe
         {
             InitializeComponent();
 
+
             if (blueToolStripMenuItem.Checked == true)
             {
                 image = blueImages;
@@ -37,6 +38,8 @@ namespace TicTacToe
             {
                 image = redImages;
             }
+
+
 
         }
 
@@ -61,6 +64,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r1c1button_Click;
             newClick = false;
+
+            VerifyBoard();
+
 
         }
 
@@ -121,14 +127,123 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r1c2button_Click;
             newClick = false;
+
+            VerifyBoard();
         }
 
-        void check()
+        void VerifyBoard()
         {
             if (r1c1button.ImageIndex == 1 && r2c2button.ImageIndex == 1 && r3c3button.ImageIndex == 1)
             {
                 MessageBox.Show("X WINS!");
+                Disable();
 
+            }
+
+            if (r1c1button.ImageIndex == 0 && r2c2button.ImageIndex == 0 && r3c3button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+            }
+
+            if (r1c3button.ImageIndex == 1 && r2c2button.ImageIndex == 1 && r3c1button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+
+            }
+
+            if (r1c3button.ImageIndex == 0 && r2c2button.ImageIndex == 0 && r3c1button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+            }
+
+            if (r1c1button.ImageIndex == 1 && r1c2button.ImageIndex == 1 && r1c3button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+            }
+
+            if (r1c1button.ImageIndex == 0 && r1c2button.ImageIndex == 0 && r1c3button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+
+            }
+
+            if (r2c1button.ImageIndex == 1 && r2c2button.ImageIndex == 1 && r2c3button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+            }
+
+            if (r1c1button.ImageIndex == 0 && r1c2button.ImageIndex == 0 && r1c3button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+            }
+
+            if (r3c1button.ImageIndex == 1 && r3c2button.ImageIndex == 1 && r3c3button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+            }
+
+            if (r3c1button.ImageIndex == 1 && r3c2button.ImageIndex == 1 && r3c3button.ImageIndex == 1)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+            }
+
+            if (r1c1button.ImageIndex == 1 && r2c1button.ImageIndex == 1 && r3c1button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+            }
+
+            if (r1c1button.ImageIndex == 0 && r2c1button.ImageIndex == 0 && r3c1button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+            }
+
+            if (r1c2button.ImageIndex == 1 && r2c2button.ImageIndex == 1 && r3c2button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+            }
+
+            if (r1c2button.ImageIndex == 0 && r2c2button.ImageIndex == 0 && r3c2button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
+
+            }
+
+            if (r1c3button.ImageIndex == 1 && r2c3button.ImageIndex == 1 && r3c3button.ImageIndex == 1)
+            {
+                MessageBox.Show("X WINS!");
+                Disable();
+
+            }
+
+            if (r1c3button.ImageIndex == 0 && r2c3button.ImageIndex == 0 && r3c3button.ImageIndex == 0)
+            {
+                MessageBox.Show("O WINS!");
+                Disable();
 
             }
         }
@@ -154,6 +269,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r1c3button_Click;
             newClick = false;
+
+            VerifyBoard();
+
         }
 
         private void r2c1button_Click(object sender, EventArgs e)
@@ -177,6 +295,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r2c1button_Click;
             newClick = false;
+
+            VerifyBoard();
+
         }
 
         private void r2c2button_Click(object sender, EventArgs e)
@@ -200,6 +321,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r2c2button_Click;
             newClick = false;
+
+            VerifyBoard();
+
         }
 
         private void r2c3button_Click(object sender, EventArgs e)
@@ -223,6 +347,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r2c3button_Click;
             newClick = false;
+
+            VerifyBoard();
+
         }
 
         private void r3c1button_Click(object sender, EventArgs e)
@@ -246,6 +373,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r3c1button_Click;
             newClick = false;
+
+            VerifyBoard();
+
         }
 
         private void r3c2button_Click(object sender, EventArgs e)
@@ -269,6 +399,9 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r3c2button_Click;
             newClick = false;
+
+            VerifyBoard();
+
         }
 
         private void r3c3button_Click(object sender, EventArgs e)
@@ -292,6 +425,34 @@ namespace TicTacToe
             //Disable button so it cannot be changed
             buttonHold.Click -= r3c3button_Click;
             newClick = false;
+
+            VerifyBoard();
+        }
+
+        void Disable()
+        {
+            r1c1button.Enabled = false;
+            r1c2button.Enabled = false;
+            r1c3button.Enabled = false;
+            r2c1button.Enabled = false;
+            r2c2button.Enabled = false;
+            r2c3button.Enabled = false;
+            r3c1button.Enabled = false;
+            r3c2button.Enabled = false;
+            r3c3button.Enabled = false;
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            r1c1button.ImageIndex = -1;
+            r1c2button.ImageIndex = -1;
+            r1c3button.Enabled = false;
+            r2c1button.Enabled = false;
+            r2c2button.Enabled = false;
+            r2c3button.Enabled = false;
+            r3c1button.Enabled = false;
+            r3c2button.Enabled = false;
+            r3c3button.Enabled = false;
         }
     }
 }
