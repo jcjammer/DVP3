@@ -17,3 +17,13 @@ c:\users\lee lewis\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj
 \\vmware-host\Shared Folders\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
 \\vmware-host\Shared Folders\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 \\vmware-host\Shared Folders\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\bin\Debug\TicTacToe.exe.config
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\bin\Debug\TicTacToe.exe
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\bin\Debug\TicTacToe.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.frmTicTacToe.resources
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.exe
+\\vmware-host\Shared Folders\Documents\GitHub\DVP3\CasimirJustin_Assignment3\TicTacToe\obj\Debug\TicTacToe.pdb
